@@ -12,10 +12,11 @@ var getApi = function(queryParameter){
         if (response.ok){
             response.json().then(function (data) {
                 displayData(data, queryParameter);
-        })
+            })
         .catch(function (error) {
-        alert('Error' + response.statusText);
-        console.log(error);
+            alert('Error' + response.statusText);
+            console.log(error);
         });
-    }});
+        }
+    });
 }
