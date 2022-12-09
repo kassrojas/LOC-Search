@@ -1,9 +1,10 @@
-'https://www.loc.gov/search/?q=' + queryParameter + '&fo=json';
-'https://www.loc.gov/' + format + '/?q=' + queryParameter + '&fo=json';
+// 'https://www.loc.gov/search/?q=' + queryParameter + '&fo=json';
+// 'https://www.loc.gov/' + format + '/?q=' + queryParameter + '&fo=json';
 
 var textInputEl = document.querySelector('#textInput');
 var selectEl = document.querySelector('#select');
-
+var submitButtonEl = document.querySelector('#submitButton');
+var goBackButton = document.querySelector('#goBackButton');
 
 var getApi = function(queryParameter){
     var requestUrl = 'https://www.loc.gov/search/?q=' + queryParameter + '&fo=json';
