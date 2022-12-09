@@ -12,6 +12,7 @@ var getApi = function(queryParameter){
     fetch(requestUrl).then(function (response) {
         if (response.ok){
             response.json().then(function (data) {
+                console.log(data + "data");
                 displayData(data, queryParameter);
             })
         .catch(function (error) {
@@ -20,4 +21,10 @@ var getApi = function(queryParameter){
         });
         }
     });
-}
+};
+
+
+var displayData = function(){
+
+    
+};
