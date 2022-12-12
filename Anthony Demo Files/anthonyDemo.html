@@ -13,20 +13,22 @@
             <div class="col-12 col-md-4 bg-dark text-light p-5">
                
                 <form>
+                    <h2> LOC Search </h2>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      <input type="text" class="form-control" id="queryParameter" name="queryParameter" placeholder="Enter Search Term" />
                     </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <select class="form-select mb-3" id="format" name="format">
+                      <option selected>Open this select menu</option>
+                      <option value="maps">maps</option>
+                      <option value="audio">audio recordings</option>
+                      <option value="photos">photo, print, drawing</option>
+                      <option value="manuscripts">manuscripts/mixed material</option>
+                      <option value="newspapers">newspapers</option>
+                      <option value="film-and-videos">film, videos</option>
+                      <option value="notated-music">printed music, such as sheet music</option>
+                      <option value="websites">archived websites</option>
+                    </select>
+                    <button type="search" class="btn btn-primary" id="searchButton">Search</button>
                   </form>
 
             </div>
